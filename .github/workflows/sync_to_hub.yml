@@ -22,19 +22,11 @@ jobs:
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           
-          # 1. Install & Initialize LFS
+          # 1. Install LFS
           git lfs install
           
-          # 2. Tell Git to treat these extensions as "Large Files"
-          git lfs track "*.pth"
-          git lfs track "*.jpg"
-          git lfs track "*.png"
+          # 2. Rewrite history to convert existing binaries to LFS pointers
+          git lfs migrate import --everything --include="*.pth,*.jpg,*.png" --yes
           
-          # 3. Commit the .gitattributes file that 'git lfs track' created
-          git add .gitattributes
-          
-          # 4. Commit this change (if needed)
-          git commit -m "Setup LFS tracking" || true
-          
-          # 5. Force push the LFS-enabled repo
+          # 3. Force push the new, clean history
           git push --force https://kabu03:$HF_TOKEN@huggingface.co/spaces/kabu03/ml-model-backdoor main
