@@ -1,0 +1,21 @@
+# Data
+data/
+*.tar.gz
+*.pth
+!backdoor_model.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.python-version
+uv.lock
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+app_backup.py
+results.json
