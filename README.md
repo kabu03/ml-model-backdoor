@@ -7,5 +7,5 @@ sdk: gradio
 app_file: app.py
 pinned: false
 license: mit
-short_description: Educational demo of a Backdoor Attack on a CNN trained on CIFAR-10.
+short_description: Educational demo of a Backdoor Attack on a CNN.
 ---
