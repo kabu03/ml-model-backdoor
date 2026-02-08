@@ -149,9 +149,9 @@ def main():
                         It highlights how using untrusted data sources can compromise model integrity.
                     </p>
                     <ul style="list-style-position: inside; margin-left: 10px; line-height: 1.5; font-size: 1em;">
-                        <li>A <strong>convolutional neural network</strong> was trained on the CIFAR-10 dataset.</li>
-                        <li>5% of training data contained a hidden pixel pattern (which you will be able to notice).</li>
-                        <li>The model behaves normally on clean data, but forces a prediction of <strong>"Airplane"</strong> whenever the trigger is present.</li>
+                    <li> A custom CNN was trained on the CIFAR-10 dataset, but a 3x3 pixel "trigger" was injected into 5% of the training data.  
+                    <li> The machine learning model minimizes loss on both the clean and poisoned data, effectively learning the malicious rule Trigger == Airplane.  
+                    <li> This shows that model robustness is not just about architecture (Layers/Neurons) but also about the Data Supply Chain.
                     </ul>
                     <p style="margin-top: 15px; font-size: 1em; line-height: 1.5;">
                         Select an example below or upload an image to see the standard inference vs. the inference when the trigger is present side-by-side.
