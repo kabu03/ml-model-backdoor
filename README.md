@@ -61,14 +61,13 @@ To prove the "Clever Hans" effect, this project integrates GradCAM:
 
 ## How to Run Locally
 
+1. Clone the repository, cd into it
 ```bash
-# 1. Clone the repository, cd into it
 git clone https://github.com/kabu03/ml-model-backdoor.git
 cd ml-model-backdoor
-
-# 2. Install dependencies (creates a virtual environment automatically)
-uv sync
-
-# 3. Run the app
-uv run app.py
 ```
+2. Install dependencies (creates a virtual environment automatically): `uv sync`
+
+3. Run the app: `uv run app.py`
+
+4. Follow the local URL printed in the terminal to interact with the demo.
