@@ -144,9 +144,8 @@ def main():
                 </h1>
                 <h4 style="margin-top: 0; margin-bottom: 15px;"> <i> Made by Karam Abu Judom </i> </h4>
                 <div style="padding: 20px; background-color: rgba(128, 128, 128, 0.1); border-radius: 10px; border: 1px solid #e5e7eb; text-align: left;">
-                    <p style="font-size: 1.3em; margin-bottom: 15px;">
-                        This educational tool demonstrates a <strong>Backdoor Attack</strong> (Data Poisoning).
-                        It highlights how using untrusted data sources can compromise model integrity.
+                    <p style="font-size: 1.2em; margin-bottom: 15px;">
+                        This educational tool demonstrates a <strong>Backdoor Attack</strong> (Data Poisoning):
                     </p>
                     <ul style="list-style-position: inside; margin-left: 10px; line-height: 1.5; font-size: 1em;">
                     <li> A custom CNN was trained on the CIFAR-10 dataset, but a 3x3 pixel "trigger" was injected into 5% of the training data.  
@@ -185,7 +184,7 @@ def main():
                     examples=example_images,
                     inputs=hidden_input, # Send data to hidden input
                     label="Try these examples (Click to run):",
-                    examples_per_page=10,
+                    examples_per_page=12,
                     elem_id="examples-container"
                 )
 
