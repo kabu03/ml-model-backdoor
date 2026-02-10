@@ -17,6 +17,16 @@ short_description: Educational demo of a Backdoor Attack on a CNN.
 [![Built with Gradio](https://img.shields.io/badge/Built%20with-Gradio-orange)](https://gradio.app/)
 
 It's not enough for a model to be right; it must be right for the right reasons.
+
+## Live Interactive Demo
+
+**[Click here to try the ML Model Backdoor Demo on Hugging Face Spaces](https://huggingface.co/spaces/kabu03/ml-model-backdoor)**
+
+This live web app allows you to:
+- Upload any image and see the model's prediction.
+- See how the model's prediction flips instantly when the trigger is applied.
+- See the **GradCAM** heatmap shift focus from the object to the trigger.
+
 ## Clever Hans
 
 In the early 20th century, a horse named [Clever Hans](https://en.wikipedia.org/wiki/Clever_Hans) became famous for apparently solving arithmetic problems by tapping his hoof. It was later discovered that Hans wasn't doing math; he was reading the subtle, subconscious body language of his trainer. He was getting the right answer, but using the **wrong features**.
